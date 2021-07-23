@@ -4,7 +4,7 @@ class DatabaseController
 {
 
     private $conn;
-    private $dbhost = "216.127.173.163";
+    private $dbhost = "localhost";
     private $dbuser = "root";
     // private $dbpass = "";
     private $dbpass = "@Laoitstartup777";
