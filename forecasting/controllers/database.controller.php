@@ -6,9 +6,9 @@ class DatabaseController
     private $conn;
     private $dbhost = "localhost";
     private $dbuser = "root";
-    private $dbpass = "";
-    // private $dbpass = "@5martH67";
-    private $dbname = "forecast";
+    // private $dbpass = "";
+    private $dbpass = "@Laoitstartup777";
+    private $dbname = "forecasting";
     private $charset = "utf8";
     protected $show_errors = true;
 

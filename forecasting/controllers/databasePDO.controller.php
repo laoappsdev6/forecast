@@ -6,8 +6,8 @@ class PDODBController
     private $conn;
     private string $dbhost = "localhost";
     private string $dbuser = "root";
-    private string $dbpass = "";
-    private string $dbname = "forecast";
+    private string $dbpass = "@Laoitstartup777";
+    private string $dbname = "forecasting";
     private string $charset = "utf8";
 
     public function __construct()
