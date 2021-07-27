@@ -21,20 +21,6 @@ function PrintJSON($data, $message, $status)
     }
 }
 
-function CSVRes($data, $message, $status, $command)
-{
-
-    $f = '{"data":%s,"message":"%s","status":"%s","command":"%s"}';
-    if ($data) {
-        if (is_array($data)) {
-            printf($f, json_encode($data), $message, $status, $command);
-        } else {
-            printf($f, $data, $message, $status, $command);
-        }
-    } else {
-        printf($f, "[]", $message, $status, $command);
-    }
-}
 function Initialization()
 {
     $token = isset(getallheaders()['Token']) ? getallheaders()['Token'] : "";
@@ -74,10 +60,4 @@ function dateTime()
 {
     date_default_timezone_set("Asia/Vientiane");
     return date("Y-m-d H:i:s");
-}
-
-function formatDate($date)
-{
-    $date = new DateTime($date);
-    return $date->format('Y-m-d H:i:s');
 }
